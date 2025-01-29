@@ -8,19 +8,21 @@ import ProfileSection from "./components/ProfileSection";
 import Footer from "./components/Footer";
 import "./App.css";
 
+const Home = () => (
+  <>
+    <ContentSection />
+    <WhatWeDoSection />
+    <ProfileSection />
+    <Footer />
+  </>
+);
+
 const App = () => {
   return (
-    <Router>
+    <Router basename="/Personal-astroguider">  {/* 👈 Add basename for GitHub Pages */}
       <Navbar />
       <Routes>
-        <Route path="/" element={
-          <>
-            <ContentSection />
-            <WhatWeDoSection />
-            <ProfileSection />
-            <Footer />
-          </>
-        } />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </Router>
