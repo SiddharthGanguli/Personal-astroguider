@@ -1,0 +1,213 @@
+/* What We Do Section */
+.what-we-do-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 2%;
+    background-color: #f4f1eb;
+    flex-wrap: wrap;
+    gap: 2rem;
+    min-height: 100%;
+  }
+  
+  .what-we-do-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .what-we-do-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+  }
+  
+  .what-we-do-content {
+    flex: 1;
+    padding-right: 20px;
+    min-width: 280px;
+  }
+  
+  .content-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .what-we-do-title {
+    color: #e57373;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .what-we-do-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  
+  .what-we-do-text {
+    font-size: 1.2rem;
+    color: #654321;
+    margin-bottom: 2rem;
+  }
+  
+  .what-we-do-button {
+    background-color: #ff7043;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .what-we-do-button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .what-we-do-section {
+      padding: 40px 4%;
+    }
+  
+    .what-we-do-heading {
+      font-size: 2rem;
+    }
+  
+    .what-we-do-text {
+      font-size: 1.1rem;
+    }
+  
+    .what-we-do-button {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  
+    .what-we-do-image img {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .what-we-do-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .what-we-do-content {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .what-we-do-image img {
+      width: 90%;
+      max-width: 100%;
+    }
+  
+    .what-we-do-title {
+      font-size: 1.2rem;
+    }
+  
+    .what-we-do-heading {
+      font-size: 1.8rem;
+    }
+  
+    .what-we-do-text {
+      font-size: 1rem;
+    }
+  
+    .what-we-do-button {
+      font-size: 1rem;
+      padding: 12px 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .what-we-do-heading {
+      font-size: 1.5rem;
+    }
+  
+    .what-we-do-title {
+      font-size: 1rem;
+    }
+  
+    .what-we-do-button {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  
+    .what-we-do-image img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Scrolling Image Section */
+  .scrolling-image-section {
+    padding-top: 4rem;
+    overflow: hidden;
+    width: 100vw;
+    height: 210px; /* Adjusted for smaller images */
+    position: relative;
+    background-color: #f4f1eb;
+    margin-top: 20px;
+  }
+  
+  .scrolling-images {
+    display: flex;
+    animation: scrollImages 15s linear infinite;
+    gap: 10px; /* Reduced spacing between images */
+  }
+  
+  .scrolling-image {
+    width: auto; /* Ensures width is proportional */
+    height: 100%; /* Ensures all images match the section height */
+    object-fit: contain; /* Prevents distortion */
+  }
+  
+  /* Keyframes for scrolling effect */
+  @keyframes scrollImages {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+ /* Scrolling Image Section */
+.scrolling-image-section {
+    overflow: hidden;
+    width: 100vw; /* Full width of the viewport */
+    position: relative;
+    background-color: #f4f1eb;
+    margin-top: 20px;
+    height: 210px; /* Fixed height for scrolling images */
+  }
+  
+  .scrolling-images {
+    display: flex;
+    gap: 0; /* No gaps between images */
+    animation: scrollImages 15s linear infinite; /* Infinite seamless scroll */
+  }
+  
+  .scrolling-image {
+    width: 150px; /* Set a fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Prevent image distortion */
+  }
+  
+  /* Keyframes for continuous horizontal scrolling */
+  @keyframes scrollImages {
+    from {
+      transform: translateX(0); /* Start at initial position */
+    }
+    to {
+      transform: translateX(-100%); /* Shift entire width of the images */
+    }
+  }
+  

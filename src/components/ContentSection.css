@@ -1,0 +1,234 @@
+/* Apply to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Ensures padding/borders are included in width/height */
+}
+
+/* Prevent horizontal overflow */
+body {
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Ensuring viewport scaling */
+@media (max-width: 768px) {
+  html {
+    font-size: 16px; /* Adjust base font size */
+  }
+}
+
+.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 2%; /* Use percentage padding for responsive layout */
+  background-color: #f4f1eb;
+  flex-wrap: wrap;
+}
+
+.content-text {
+  flex: 1;
+  padding-right: 20px;
+  min-width: 280px; /* Ensures text doesn’t get too narrow */
+}
+
+.highlight-text {
+  color: #e57373;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #654321;
+}
+
+.cta-button {
+  background-color: #ff7043;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e64a19;
+}
+
+.content-image img {
+  width: 100%; /* Ensure the image takes up full width, but within limits */
+  height: auto;
+  max-width: 400px; /* Limit max width to prevent overflowing */
+}
+
+/* Keyframes for rotating image */
+@keyframes rotateImage {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.content-image img {
+  animation: rotateImage 30s linear infinite; /* Adjust duration as needed */
+}
+
+.description::after {
+  content: "|";
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .content-section {
+    padding: 40px 4%; /* Reduce padding for smaller screens */
+  }
+
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  .content-image img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content-text {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .content-image img {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .highlight-text {
+    font-size: 1.2rem;
+  }
+
+  .main-heading {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-heading {
+    font-size: 1.5rem;
+  }
+
+  .highlight-text {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .content-image img {
+    width: 100%;
+    max-width: 100%; /* Ensure it doesn’t overflow */
+  }
+}
+
+.features-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f1eb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 50px 0; /* Remove left and right padding */
+  width: 100vw; /* Full viewport width */
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%; /* Ensure it takes full width */
+  max-width: none; /* Remove the max-width constraint */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.feature-card {
+  background: #f4f1eb;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 280px;
+  text-align: center;
+  margin: 10px;
+}
+
+.feature-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe0b2;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.feature-icon {
+  width: 50px;
+  height: auto;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #654321;
+}

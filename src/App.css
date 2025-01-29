@@ -1,0 +1,24 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #eeebe6; /* Midnight Black */
+  color: #F1F1F1; /* Starlight White */
+}
+
+main {
+  padding-top: 70px; /* Ensure content isn't hidden by the fixed navbar */
+}
+
+h1, h2, h3, p {
+  color: #F1F1F1; /* Text Color */
+}
+
+a {
+  color: #F9E4B7; /* Soft Yellow */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F1F1F1;
+}

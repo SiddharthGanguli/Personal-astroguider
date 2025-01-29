@@ -1,0 +1,92 @@
+/* Base Navbar Styles */
+.navbar {
+  background: linear-gradient(135deg, #2B2D42, #1A1B2F);
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: transform 0.3s ease-in-out;
+  height: 60px; /* Default height for larger screens */
+}
+
+/* Move Navbar Up While Scrolling */
+.navbar.scrolling {
+  transform: translateY(-100%);
+}
+
+/* Move Navbar Back Down When Scrolling Stops */
+.navbar.stopped {
+  transform: translateY(0);
+}
+
+/* Navbar Container */
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar List */
+.navbar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navbar List Items */
+.navbar-list li {
+  margin: 0 20px;
+}
+
+/* Navbar Links */
+.navbar-link {
+  color: #E0C097;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar-link:hover {
+  color: #FFD700;
+  text-shadow: 0 0 15px rgba(255, 223, 0, 0.8), 0 0 20px rgba(255, 223, 0, 0.5);
+  transform: scale(1.1);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .navbar {
+    top: auto;
+    bottom: 0;
+    padding: 15px 0; /* Increased padding for mobile */
+    height: 80px; /* Increased height for mobile */
+  }
+
+  .navbar.mobile.scrolling {
+    transform: translateY(100%);
+  }
+
+  .navbar.mobile.stopped {
+    transform: translateY(0);
+  }
+
+  .navbar-list {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+
+  .navbar-list li {
+    margin: 0;
+  }
+
+  .navbar-link {
+    font-size: 16px;
+  }
+}

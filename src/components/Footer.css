@@ -1,0 +1,120 @@
+.footer {
+    background: linear-gradient(145deg, #2a3d66, #1d2744); /* Dark blue cosmic theme */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .footer-about, .footer-services, .footer-social {
+    flex: 1;
+    margin: 0 20px;
+    min-width: 250px;
+  }
+  
+  .footer-about h4, .footer-services h4, .footer-social h4 {
+    font-size: 1.5rem;
+    color: #f5c542; /* Golden accent color for titles */
+    margin-bottom: 15px;
+    font-family: 'Lora', serif;
+  }
+  
+  .footer-about p, .footer-services ul, .footer-social ul {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .footer-services ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-services li, .footer-social li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-services a, .footer-social a {
+    color: #f5c542; /* Golden links for better visibility */
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .footer-services a:hover, .footer-social a:hover {
+    color: #ff7043; /* Slight orange hover effect for a warm, cosmic feel */
+    transform: translateX(5px);
+  }
+  
+  .footer-social ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-social a {
+    font-size: 1.2rem;
+  }
+  
+  .footer-bottom {
+    background-color: #2a3d66; /* Matching darker shade */
+    padding: 15px 0;
+    color: #bdbdbd;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  .footer-bottom a {
+    color: #f5c542; /* Golden accent for developer link */
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .footer-bottom a:hover {
+    color: #ff7043;
+  }
+  
+  .footer-content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://example.com/starry-background.jpg') center center / cover no-repeat; /* Optional cosmic stars effect */
+    opacity: 0.1;
+    pointer-events: none;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-about, .footer-services, .footer-social {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    .footer-social ul {
+      flex-direction: column;
+    }
+  }
+  .golden-text {
+    color: #f9a826; /* Golden color for non-clickable items */
+    font-weight: bold;
+  }
+  
