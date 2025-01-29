@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Personal-astroguider/static/css/main.c3efc4df.css",
-    "main.js": "/Personal-astroguider/static/js/main.aaef508e.js",
+    "main.js": "/Personal-astroguider/static/js/main.0761640d.js",
     "static/js/488.9561f9b8.chunk.js": "/Personal-astroguider/static/js/488.9561f9b8.chunk.js",
     "static/media/file-removebg-preview.png": "/Personal-astroguider/static/media/file-removebg-preview.480bf50869b8270dcf16.png",
     "static/media/astrology-circle-orance-dots-1024x1024.png": "/Personal-astroguider/static/media/astrology-circle-orance-dots-1024x1024.8829f3d2fc86f51c8bd6.png",
@@ -11,11 +11,11 @@
     "static/media/cancer-300x300.png": "/Personal-astroguider/static/media/cancer-300x300.2627d7777f1a3487ead7.png",
     "index.html": "/Personal-astroguider/index.html",
     "main.c3efc4df.css.map": "/Personal-astroguider/static/css/main.c3efc4df.css.map",
-    "main.aaef508e.js.map": "/Personal-astroguider/static/js/main.aaef508e.js.map",
+    "main.0761640d.js.map": "/Personal-astroguider/static/js/main.0761640d.js.map",
     "488.9561f9b8.chunk.js.map": "/Personal-astroguider/static/js/488.9561f9b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c3efc4df.css",
-    "static/js/main.aaef508e.js"
+    "static/js/main.0761640d.js"
   ]
 }
